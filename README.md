@@ -1,6 +1,7 @@
 # dsh-recent-sessions · 最近访问
 
 [![npm version](https://img.shields.io/npm/v/@miloji/dsh-recent-sessions)](https://www.npmjs.com/package/@miloji/dsh-recent-sessions)
+[![开放插件市场](https://img.shields.io/endpoint?url=https%3A%2F%2Fdshopen.org%2Fbadge%2F%40miloji%2Fdsh-recent-sessions.json)](https://dshopen.org/zh/plugins/%40miloji%2Fdsh-recent-sessions/)
 
 DSH（DeepSeek Harness）侧边栏的**最近访问**面板：**以会话为主**——平铺列出你最近打开过的
 会话（跨所有工作区，按“打开时间”倒序，不是按活动排序），每行标注它属于哪个工作区；

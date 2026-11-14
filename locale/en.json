@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Recent Sessions",
+    "description": "Sidebar Recents panel: a flat list of the sessions you opened most recently (across all workspaces), each row labelled with its workspace; running sessions show a blinking three-dot indicator."
+  }
+}

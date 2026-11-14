@@ -1,0 +1,66 @@
+{
+  "name": "@miloji/dsh-recent-sessions",
+  "version": "0.2.0",
+  "description": "Sidebar Recents panel for DeepSeek Harness: open any session you visited most recently, across workspaces, with its workspace labelled on each row and a blinking three-dot mark while a task runs. 最近访问的会话列表，行内标注所属工作区。",
+  "type": "module",
+  "license": "MIT",
+  "author": "miloji",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "cordis",
+    "plugin",
+    "session",
+    "recent",
+    "sidebar",
+    "history"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JIQ1314an/dsh-recent-sessions.git"
+  },
+  "homepage": "https://github.com/JIQ1314an/dsh-recent-sessions#readme",
+  "bugs": {
+    "url": "https://github.com/JIQ1314an/dsh-recent-sessions/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.2 <0.3.0-0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check client.js",
+    "prepublishOnly": "npm run check"
+  }
+}

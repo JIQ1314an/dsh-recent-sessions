@@ -1,0 +1,3 @@
+- insert:
+    - id: recent-sessions
+      name: '@miloji/dsh-recent-sessions'

@@ -151,7 +151,9 @@ async function handle(req, res, url) {
   }
 
   if (method === 'GET' && route === '/about') {
-    const manifest = await fs.readFile(new URL('../package.json', import.meta.url), 'utf8')
+    // Package root: `./` because index.js IS the package root file. `../` would
+    // land in node_modules/<scope>/ when installed, where no manifest exists.
+    const manifest = await fs.readFile(new URL('./package.json', import.meta.url), 'utf8')
       .then((text) => JSON.parse(text))
       .catch(() => undefined);
     json(res, 200, {

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.1
+
+- Fix `GET /about` reading the wrong manifest: the route resolved
+  `../package.json`, which under `node_modules/@miloji/…` is the scope directory,
+  so `name` fell back to a stale string and `version` was always `null`. It now
+  resolves `./package.json` (the package root, where `index.js` lives).
+- Docs: README now shows a screenshot of the panel.
+
 ## 0.2.0
 
 - **Session-first recents**: the panel is now a flat list of the sessions you

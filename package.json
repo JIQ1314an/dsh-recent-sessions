@@ -1,6 +1,6 @@
 {
   "name": "@miloji/dsh-recent-sessions",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Sidebar Recents panel for DeepSeek Harness: open any session you visited most recently, across workspaces, with its workspace labelled on each row and a blinking three-dot mark while a task runs. 最近访问的会话列表，行内标注所属工作区。",
   "type": "module",
   "license": "MIT",

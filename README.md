@@ -9,6 +9,12 @@ DSH（DeepSeek Harness）侧边栏的**最近访问**面板：**以会话为主*
 
 ![DSH](https://img.shields.io/badge/DSH-%3E%3D0.2.0--rc.2%20%3C0.3.0-0-2563eb)
 
+![最近访问面板](https://raw.githubusercontent.com/JIQ1314an/dsh-recent-sessions/main/docs/screenshots/panel.png)
+
+上图中，第一条会话 `dsh-plugins` 正在执行任务，行首是三个琥珀色闪烁圆点；
+其余会话是静态圆点。四条会话分别属于 `dsh-plugins`、`dsh-tmp`、`acl-recovery`
+三个不同的工作区。
+
 ## 功能
 
 - **最近访问的会话列表**：点击侧边栏时钟图标打开；每行 = 一次最近打开的会话。
